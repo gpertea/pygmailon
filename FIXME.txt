@@ -1,0 +1,15 @@
+
+It seems there are rare cases where some messages have no "From" emails at all?
+
+The log was:
+
+...
+Processed 70000 messages so far
+Processed 75000 messages so far
+Processed 80000 messages so far
+Traceback (most recent call last):
+  File "/home/gpertea/work/pygmailon/./gmailclean.py", line 163, in <module>
+    main()
+  File "/home/gpertea/work/pygmailon/./gmailclean.py", line 148, in main
+    sender = getEmailElem(message, 'From')[0]
+TypeError: 'NoneType' object is not subscriptable
